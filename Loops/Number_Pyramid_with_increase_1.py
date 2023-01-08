@@ -3,6 +3,10 @@ by 1. Take input as the number of rows of the pyramid"""
 
 def spaces(a):
     for a in range (1,a+1):
+        print("  ",end="")
+
+def space(b):
+    if b<10:
         print(" ",end="")
 
 rows=int(input("Enter the Number of the Rows:\n"))
@@ -11,7 +15,7 @@ print("\n Pyramid\n")
 for x in range(1,rows+1):
     spaces(rows-x)
     for y in range(1,x+1):
-        
+        space(z)
         print(f" ",z,end="")
         z=z+1
     print("\n")
